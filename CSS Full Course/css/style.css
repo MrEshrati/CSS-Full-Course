@@ -1,0 +1,182 @@
+/* To style a html tag we need to use a selector.
+there are 3 types of selectors :
+
+1. Element selector (selects all Elements that match the element selector name and submits the style to 
+them in the html page)
+
+this style will apply to all h1 elements in the html page
+h1 {
+
+    color: red;
+}
+
+2. Class selector (selects all tags that containes this class name and will
+style them in the html page)
+
+.class_name {
+
+    background-color: black;
+}
+
+3. Id Selector (selects the tag that containes this id attribute and will
+apply the style to it)
+
+#id_name {
+
+    background-color: black;
+}
+*/
+
+/* ------------------------------------------------------ */
+
+/* Specificity for selectors :
+(The Lower the number be means that it will be applyed to the element that it selects)
+
+1. Inline Styling (styling the elements in the html page)
+2. Class Selectors
+3. Id Selectors
+4. Element Selectors
+
+*/
+
+/* ------------------------------------------------------ */
+
+/* Pseudo Elements (you can specify selectors under conditions with pseudo elements)  : 
+
+this style will be applyed when you hover on the element with mouse
+h1:hover {
+
+    color: black;
+}
+
+this will target the first child of the ul tag in html
+li:first-child {
+
+    color: red;
+}
+
+this will target the last child of the ul tag in html
+li:last-child {
+
+    color: red;
+}
+
+this will target the ul tags that only contain one child
+li:only-child {
+
+    color: black;
+}
+
+the attribute for this condition can be :
+['odd' , 'even' , 'number of the child']
+
+this will target the odd childs of the ul tag
+li:nth-child(odd) {
+
+    color: black;
+}
+
+it means if the link is unvisited(:link) it will turn the text color to black
+a:link {
+    color: black;
+}
+
+it means if the link is visited it will turn the text color to red
+a:visited {
+    color: red;
+}
+
+*/
+
+/* ------------------------------------------------------ */
+
+/* Advanced Selectors :
+
+1. Adjacent Sibling Selector
+it will select the element folowed by another element in html page
+
+it will select every <a> tag that is followed by an h2 tag
+h2 + a {
+
+    color: #fff;
+}
+
+2. General Sibling Selector
+its like the (1) selector but it will only select two tags following each other that are in the same parent
+
+it will only select the <a> tag that is followed by a h2 tag and they are in the same parent
+h2 ~ a {
+    
+    color: #fff;
+}
+
+3. Child Selector
+it will select every single child of an element
+
+it will select all children of ul 
+ul > li{
+
+    color: #fff;
+}
+
+4. Dicendent Child Selector
+it will select all children of an element that are the same as the child that we defined
+
+it will select all <li> children of the ul tag
+ul li{
+
+    color: #fff;
+}
+*/
+
+/* ------------------------------------------------------ */
+
+/* Attribute Selectors: 
+
+1. General Attribute Selector :
+
+it will select all <a> tags that the src attribute in them containes the value
+a[src='../img/'] {
+
+    color: #000000;
+}
+
+it will select all <a> tags that the src attribute in them starts with the value
+a[src^='../img/'] {
+
+    color: #000000;
+}
+
+it will select all <a> tags that the src attribute in them ends with the value
+a[src$='../img/'] {
+
+    color: #000000;
+}
+
+it will select all <a> tags that the src attribute containes the value anywhere in it
+a[src*='../img/'] {
+
+    color: #000000;
+}
+
+2. WhiteSpace Attribute Selector :
+it will use in the situation where a tag containes multiple classes
+keep that in mind that we can use General Attribute Selector to do this too.
+
+h2 tag = <h2 class="subtitle container-subtitle"></h2>
+
+it will select the class attribute that containes this value 
+h2[class~=container-subtitle] {
+
+    color: #000000;
+}
+
+3.
+it will select the class attribute that starts with this value
+it is used in situation that there are multiple classes and multiple hiphens in the names of classes
+h2[class|=container-subtitle] {
+
+    color: #000000;
+}
+
+*/
