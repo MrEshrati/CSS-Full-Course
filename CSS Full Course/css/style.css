@@ -180,3 +180,53 @@ h2[class|=container-subtitle] {
 }
 
 */
+
+/* ------------------------------------------------------ */
+
+/* CSS General Rule:
+
+this is the general type of writing css first defining the selector
+then putting curly brackets and inside of this curly brackets are called
+CSS Blocks
+selector {
+
+    remember you must always put a semicolon between at the end of the line of code 
+    and that way it will run
+
+    property : value;
+    property2 : value;
+    property... : value;
+}
+
+*/
+
+/* ------------------------------------------------------ */
+
+/* CSS Colors : 
+
+for better understanding check the video in the readme txt document from 1:17:40
+ 
+1. name of the colors
+
+selector {
+
+    color: black;
+}
+
+2. hex code of the colors
+
+selector {
+
+    this hex code is representing the black color
+    color: #000000;
+}
+
+3. rgb of the colors
+
+selector {
+
+    this rgb code is representing the black color
+    color: rgb(0,0,0);
+}
+
+*/
