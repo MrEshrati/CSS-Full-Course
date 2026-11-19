@@ -5,3 +5,7 @@ A small HTML page and annotated stylesheet for studying CSS selectors and the ca
 ## View the examples
 
 Open [index.html](CSS%20Full%20Course/index.html) in a browser and read [style.css](CSS%20Full%20Course/css/style.css) next to it. Use the browser inspector to see which rules match the page elements.
+
+## License
+
+The [MIT License](LICENSE) covers MrEshrati's original styles, markup, and notes. The linked course video and other third-party material retain their own terms.
